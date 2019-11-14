@@ -1,0 +1,41 @@
+{
+  "name": "island",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "start:dev": "nodemon --inspect-br",
+    "start:prod": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "basic-auth": "^2.0.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.10.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.15",
+    "module-alias": "^2.2.2",
+    "mysql2": "^1.7.0",
+    "npm-check": "^5.9.0",
+    "require-directory": "^2.1.1",
+    "sequelize": "^5.19.4",
+    "validator": "^11.1.0"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@models": "app/models",
+    "@core": "core",
+    "@middlewares": "middlewares",
+    "@validator": "app/validators/validator.js",
+    "@services": "app/services",
+    "@lib": "app/lib",
+    "@db": "core/db.js"
+  }
+}
